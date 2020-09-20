@@ -60,7 +60,7 @@ class JsonResult extends ActionResult {
         resp.setStatus(getStatusCode());
         resp.setContentType("application/json");
         PrintWriter pw = resp.getWriter();
-        pw.print(JsonUtils.toJson(output));
+        pw.print(JsonUtils.toJson(output, false));
     }
 
     List<Cookie> getCookies() {

@@ -38,7 +38,7 @@ public class TaskQueuesLogic {
         if (task.getRequestBody() == null) {
             task.getParamMap().forEach((key, value) -> taskToBeAdded.param(key, value));
         } else {
-            taskToBeAdded.payload(JsonUtils.toJson(task.getRequestBody()));
+            taskToBeAdded.payload(JsonUtils.toJson(task.getRequestBody(), false));
         }
 
         requiredQueue.add(taskToBeAdded);
