@@ -38,8 +38,8 @@ export class RichTextEditorComponent implements OnInit {
 
   private getEditorSettings(): any {
     return {
-      base_url: '/tinymce',
-      skin_url: '/tinymce/skins/ui/oxide',
+      base_url: 'https://cdn.jsdelivr.net/npm/tinymce@5.4.1',
+      skin_url: 'https://cdn.jsdelivr.net/npm/tinymce@5.4.1/skins/ui/oxide',
       content_css: '/assets/tinymce/tinymce.css',
       suffix: '.min',
       height: this.minHeightInPx,

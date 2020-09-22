@@ -20,7 +20,7 @@ import { RichTextEditorComponent } from './rich-text-editor.component';
     RichTextEditorComponent,
   ],
   providers: [
-    { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' },
+    { provide: TINYMCE_SCRIPT_SRC, useValue: 'https://cdn.jsdelivr.net/npm/tinymce@5.4.1/tinymce.min.js' },
   ],
 })
 export class RichTextEditorModule { }
